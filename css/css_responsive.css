@@ -1,0 +1,98 @@
+/* Ejercicio:
+1) Cambiarle la fuente de letra al titulo y a los textos ( el que mas nos guste).
+2) Que el texto rosado tenga sangria
+3) usando media query hacer que se adapte el contenido a dispositivos de tablet y de celular.*/
+*{
+    font-family: 'Indie Flower', cursive;}
+   
+
+
+h1{
+    text-align: center;
+}
+
+
+
+
+
+
+
+.uno{
+    width:300px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 100%;
+}
+
+a{
+    padding:10px;
+    background-color:lightblue;
+    width: 45%;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 20px;
+
+}
+
+p{
+    padding: 5px 10px;
+    text-indent: 1.5rem;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+
+.texto{
+    width: 80%;
+    margin: auto;
+}
+section{
+    background-color: lightcoral;
+}
+
+
+
+@media(max-width:768px){
+    
+    h1{font-size:1.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+    
+    main{
+
+    grid-template-columns:repeat(2, 1fr); 
+    grid-template-rows: 1fr 1fr;
+    justify-content: center ;
+    justify-items: center;
+
+    }
+
+}
+
+@media(max-width:370px  ){
+
+
+    /*{margin: 0;}*/
+    main{
+    grid-template-columns:1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+   
+
+}
+}
+
