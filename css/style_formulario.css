@@ -1,0 +1,145 @@
+html{
+    margin:0PX;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 34px;
+}
+
+
+
+*::after,*::before{
+
+    box-sizing: inherit;
+}
+
+body>*{/*TODOS LOS ELEMENTOS HIJOS DIRECTOS DEL BODY*/
+    background-color:#747d8c;
+    border: medium solid black;
+    }
+
+
+
+
+body{
+    
+
+   
+    /*font-size: 60%;*/
+    min-height:100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-row: 1fr 4fr  ;
+    grid-template-areas: 
+    
+        "header header"
+        "form form"
+    
+    
+    ;
+}
+
+    .header
+        {   grid-area: header;
+            height: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .header h1{
+        
+         font-size:0.7rem;
+         text-align: center;
+        }
+
+.form{
+    background-color: #8395a7;
+    font-size: 0.5rem;
+    width: auto;
+    height: fit-content;
+    grid-area:form;
+    display: flex;
+    
+    display: wrap;
+/* background-size: 100vw 100vh;
+    background-attachment: fixed;*/
+    border-radius: 1em;
+
+   
+}
+        
+
+
+    .form_input
+        {box-sizing: border-box;
+        font-family: inherit;
+        padding: 0.1rem;
+        width: 80%;
+        }
+    .genero{
+        display: flex;
+
+    }    
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center ;
+    }
+
+    .btn{
+        font-family: inherit;
+        padding: 0.2rem;
+       
+        
+    }
+    .btn1{background-color: #1e90ff;;}
+    .btn2{background-color: #ff4757;}
+
+
+    a{ text-decoration: none;
+   }
+
+
+   @media(min-width:768px){
+    
+    .header
+        {  
+            height:50%;
+            color: blanchedalmond ;
+            
+        }
+
+        .header h1{
+            font-size:0.9rem;
+            text-align: center;
+           }
+
+           .form{
+            background-color: #8395a7;
+            font-size: 0.6rem;
+            width: auto;
+            grid-area:form;
+            display: flex;
+            justify-content:center;
+            
+            display: wrap;
+        /* background-size: 100vw 100vh;
+            background-attachment: fixed;*/
+            border-radius: 1em;
+        
+           
+        }
+        .form_container{
+            border: medium solid black;
+        }
+
+        .form_input{
+        padding:0.3rem ;
+        padding-left:0.4rem;
+       
+        }
+
+
+        }

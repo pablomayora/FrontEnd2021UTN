@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    
+    
+    <title>Formulario Registro</title>
+</head>
+<body>
+
+<header class="header">
+
+    <h1>FORMULARIO DE REGISTRO</h1>
+
+</header>
+
+
+
+
+
+    <form class="form" action="" autocomplete="off">
+        <div class="form_container">
+            <label for="nombre">Nombres completos</label>
+                <input class="form_input" type="text" name="nombre" id="nombre" placeholder="Nombres Completo" required title="PorFavor Completa Este campo">
+            <br>
+            <label for="apellido">Apellidos</label>
+                <input class="form_input" type="text" name="apellido" id="nombre" placeholder="Apellidos Completos" required title="PorFavor Completa Este campo">
+                <br>
+            <br>
+
+            <label for="Genero">Genero</label>
+            <div class="genero">
+                <input  name="Genero" value="M" id="Genero" type="radio" value="M">
+                    <label for="Genero-M">Masculino</label>
+                <input  name="Genero" value="F" id="Genero" type="radio" value="F">
+                    <label for="Genero-F">Femenino</label>
+                <input  name="Genero" value="Un" id="Genero" type="radio" value="U">
+                    <label for="Genero-U">Indefinido</label>
+            </div>
+            <br>
+            <label for="password">Password</label>
+                <input class="form_input" type="password" name="password" id="password" placeholder="Ingresa Tu contraseña" required>
+            <br>
+
+            <label for="correo">Email</label>
+                <input class="form_input" type="email" name="correo" id="correo" placeholder="email" required>
+            <br>
+            <label for="">Fecha de Nacimiento</label>
+                <input class="form_input" type="date" name="FechaNacimiento" required>
+            <br>
+            <label for="Direccion">Direccion</label>
+                <input class="form_input" id="Direccion"  name="Direccion" placeholder="Calle #-#Casa/#Dpto" type="adrees" required>
+            <br>
+            <label for="CodigoArea">Telefono</label>
+                <select name="" id="CodigoArea" placeholder="+54" name="CodigoArea" required>
+                
+                    <option value="+51">+51</option>
+                    <option value="+54" selected>+54</option>
+                    <option value="+55">+55</option>
+                    <option value="+56">+56</option>
+                </select>
+            <input type="tel" class="form_input"  placeholder="Ingrese numero de Telefono" name="Celular" required >
+            
+            <p>
+            <label for="terminos">
+            
+                <input id="terminos" type="checkbox" name="terminos" aria-required="">
+            Aceptas Terminos y condiciones?
+            </label>
+            </p>
+
+            <br>
+            
+        
+    <div class="btn-container">
+            <button  class="btn btn1" type="submit">REGISTRAR</button>
+            <button  class="btn btn2" type="reset">BORRAR</button>        
+        
+            <a href="#">🔙</a>
+        
+    </div>
+
+        </div>
+    </form>
+    
+</body>
+</html>
